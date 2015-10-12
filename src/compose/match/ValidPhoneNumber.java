@@ -18,7 +18,7 @@ public class ValidPhoneNumber {
 	public boolean isValidPhoneNumber(String line) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "([\\d]{3}|\\([\\d]{3}\\))[- ]?[\\d]{3}[- ]?[\\d]{4}";
 		return Pattern.matches(regex, line);
 	}
 }
