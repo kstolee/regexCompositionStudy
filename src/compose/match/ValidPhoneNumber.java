@@ -11,8 +11,9 @@ public class ValidPhoneNumber {
 	 * This function should take one line of text and verify that the entire
 	 * string is composed of one valid phone number. Extra characters like
 	 * whitespace before or after, or anything that would invalidate the phone
-	 * number are not allowed (except newline at the end). For our purposes, we
-	 * only accept phone numbers with dashes like: ###-###-####
+	 * number are not allowed (except newline at the end). A valid phone number
+	 * for our purposes has 10 digits, which may be separated by dashes, spaces,
+	 * or other familiar means (see test cases for the exact cases to match).
 	 * 
 	 */
 	public boolean isValidPhoneNumber(String line) {
