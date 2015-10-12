@@ -20,7 +20,7 @@ public class PossessedPossessions {
 		List<String> possessions = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = ".*'s\\s(.{2,})\\W";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(anyText);
 		while (matcher.find()) {

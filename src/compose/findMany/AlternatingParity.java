@@ -20,7 +20,7 @@ public class AlternatingParity {
 		List<String> integerPortions = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "\\W*\\d{2,}\\W*";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(content);
 		while (matcher.find()) {

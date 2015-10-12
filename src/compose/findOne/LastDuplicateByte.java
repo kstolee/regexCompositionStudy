@@ -20,14 +20,14 @@ public class LastDuplicateByte {
 	 * 
 	 */
 	public String captureLastDuplicateByte(String content) {
-		String byteString = "";
+		String byteString = "\\b([A-Z]+)\\s+\\1\\b";
 
 		// TODO compose a regex to complete the challenge
 		String regex = "";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(content);
 		if (matcher.find()) {
-			byteString = matcher.group(1);
+			byteString = matcher.group(-1);
 		}
 
 		return byteString;
