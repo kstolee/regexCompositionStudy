@@ -15,7 +15,7 @@ public class HasSoyIngredient {
 	public boolean hasSoyIngredient(String ingredientsList) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = ".*\\bsoy\\b.\\w";
 		Pattern pattern = Pattern.compile(regex,Pattern.CASE_INSENSITIVE);
 		Matcher matcher = pattern.matcher(ingredientsList);
 		return matcher.find();

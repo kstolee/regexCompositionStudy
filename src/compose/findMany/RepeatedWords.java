@@ -21,13 +21,12 @@ public class RepeatedWords {
 		List<String> repeats = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "\\b(\\w+)\\b\\W+\\b\\1\\b";
 		Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
 		Matcher matcher = pattern.matcher(textBlock);
 		while (matcher.find()) {
 			repeats.add(matcher.group(1));
 		}
-
 		return repeats;
 	}
 

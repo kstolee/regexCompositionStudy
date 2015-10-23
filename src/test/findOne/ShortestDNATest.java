@@ -25,6 +25,7 @@ public class ShortestDNATest {
 		String correctAnswer = "ATTGC";
 
 		String compositionAnswer = shortestDNA.captureShortestDNA(sequencedDNA);
+		System.out.println(compositionAnswer);
 		assertThat(compositionAnswer, equalTo(correctAnswer));
 	}
 
@@ -47,6 +48,7 @@ public class ShortestDNATest {
 		String correctAnswer = "";
 
 		String compositionAnswer = shortestDNA.captureShortestDNA(sequencedDNA);
+		
 		assertThat(compositionAnswer, equalTo(correctAnswer));
 	}
 

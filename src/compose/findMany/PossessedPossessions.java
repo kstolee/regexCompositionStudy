@@ -20,12 +20,13 @@ public class PossessedPossessions {
 		List<String> possessions = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "(\\w)^(\\w|')+$?=.*";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(anyText);
 		while (matcher.find()) {
 			possessions.add(matcher.group(1));
 		}
+		System.out.println(possessions);
 
 		return possessions;
 	}
