@@ -38,8 +38,8 @@ public class demo {
 	
 	public boolean isMatching(String testString) {
 
-		String regex = "initially fails";
-		//String regex = "ab+c";
+		//String regex = "initially fails";
+		String regex = "ab+c";
 		return Pattern.matches(regex, testString);
 	}
 	

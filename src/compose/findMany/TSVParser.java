@@ -12,7 +12,7 @@ public class TSVParser {
 	 * or more characters, and do not contain tab characters or newline
 	 * characters). Lines are delimited by newlines. Capture the first and third
 	 * fields of each line.
-	 * 
+	 * 		
 	 */
 	public List<String> captureFirstAndThirdFields(String TSVContent) {
 		List<String> fields = new LinkedList<String>();
