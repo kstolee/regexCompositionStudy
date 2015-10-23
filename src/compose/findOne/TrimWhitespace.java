@@ -14,7 +14,7 @@ public class TrimWhitespace {
 		String trimmedContent = "";
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "four score and";
 		Pattern pattern = Pattern.compile(regex,Pattern.DOTALL);
 		Matcher matcher = pattern.matcher(content);
 		if(matcher.find()) {
