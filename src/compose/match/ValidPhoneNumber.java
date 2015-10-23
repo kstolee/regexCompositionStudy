@@ -19,7 +19,10 @@ public class ValidPhoneNumber {
 	public boolean isValidPhoneNumber(String line) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+//		String regex = "\+\d(-\d{3}){2}-\d{4}";
+		String regex = "\\d\\d\\d\\d\\d\\d([,\\s])?\\d\\d\\d\\d";
+//		String regex = "^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$";
+//		String regex ="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$";
 		return Pattern.matches(regex, line);
 	}
 }

@@ -15,7 +15,7 @@ public class JavaIntDeclaration {
 	 * 
 	 */
 	public String captureIntConstant(String javaCode) {
-		String constant = "";
+		String constant = "\\d";
 
 		// TODO compose a regex to complete the challenge
 		String regex = "";
