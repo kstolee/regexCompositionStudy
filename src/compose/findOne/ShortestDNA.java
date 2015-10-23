@@ -29,7 +29,7 @@ public class ShortestDNA {
 		List<String> allShortest = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "(AT(((?!AT).)*?)GC)";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(content);
 		while (matcher.find()) {

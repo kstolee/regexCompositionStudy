@@ -20,7 +20,7 @@ public class LastDuplicateByte {
 	 * 
 	 */
 	public String captureLastDuplicateByte(String content) {
-		String byteString = "";
+		String byteString = "([0-9A-F]{2})(?=\\.*\\s(\\1)\\s)";
 
 		// TODO compose a regex to complete the challenge
 		String regex = "";

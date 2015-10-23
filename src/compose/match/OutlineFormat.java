@@ -21,7 +21,7 @@ public class OutlineFormat {
 	public boolean isOutlineFormat(String line) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "\\s*([0-9]+|[a-z]|[A-Z]|i+)\\.\\s+.*";
 		return Pattern.matches(regex, line);
 	}
 
