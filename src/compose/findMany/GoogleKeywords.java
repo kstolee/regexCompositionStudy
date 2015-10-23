@@ -18,7 +18,9 @@ public class GoogleKeywords {
 		List<String> keywords = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		//String regex = "";
+		String regex = "(http|https):\\/\\/(www.){0,1}google.com[.]q=";
+		// (http|https):\/\/(www.){0,1}google.[a-z.]+\/url\?sa=t&rct=j&q=&esrc=s&source=web&cd=10&ved=0CHoQFjAJ
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(content);
 		while (matcher.find()) {

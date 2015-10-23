@@ -16,7 +16,8 @@ public class VerbPortion {
 		List<String> verbs = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		//String regex = "";
+		String regex = "(\\w\\. *+[a-zA-Z]+ing ^f)";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(content);
 		while (matcher.find()) {
