@@ -15,7 +15,7 @@ public class HasSoyIngredient {
 	public boolean hasSoyIngredient(String ingredientsList) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "Edamame, salt, Okara, Miso, Shoyu, Natto, tofu, Kinniko flour, Kyodofu, soy, soya, Supro, Tamari, Tempeh, Teriyaki sauce, vegetable protein, Yakidofu, Yuba curd, ";
 		Pattern pattern = Pattern.compile(regex,Pattern.CASE_INSENSITIVE);
 		Matcher matcher = pattern.matcher(ingredientsList);
 		return matcher.find();

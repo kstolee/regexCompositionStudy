@@ -25,7 +25,7 @@ public class OnMinuteEvents {
 		List<String> onMinuteEvents = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "2015-02-09T02:54:00Z Siva took a nap\n2015-02-09T02:54:01Z Siva was snoring\n2015-02-09T03:01:00Z Coffee is served.\n2015-02-10T20:00:01Z Dragon went to sleep.";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(logContent);
 		while (matcher.find()) {
