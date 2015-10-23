@@ -21,7 +21,7 @@ public class RepeatedWords {
 		List<String> repeats = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = textBlock.substring(0, textBlock.indexOf(' '));
 		Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
 		Matcher matcher = pattern.matcher(textBlock);
 		while (matcher.find()) {
