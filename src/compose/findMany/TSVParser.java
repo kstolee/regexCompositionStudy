@@ -16,15 +16,13 @@ public class TSVParser {
 	 */
 	public List<String> captureFirstAndThirdFields(String TSVContent) {
 		List<String> fields = new LinkedList<String>();
-
-		String regex = "";
+		String regex = "(.+)\\t.+\\t(.+)(\\t.+)*\\n*";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(TSVContent);
 		while (matcher.find()) {
 			fields.add(matcher.group(1));
 			fields.add(matcher.group(2));
 		}
-
 		return fields;
 	}
 
