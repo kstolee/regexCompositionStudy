@@ -24,7 +24,7 @@ public class ReverseSentences {
 	public boolean isReversedSentences(String line) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "\\.";
 		return Pattern.matches(regex, line);
 	}
 
