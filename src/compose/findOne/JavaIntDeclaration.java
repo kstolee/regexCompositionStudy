@@ -18,7 +18,9 @@ public class JavaIntDeclaration {
 		String constant = "";
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		
+		 
+		String regex = "int"+" "+"x"+" "+"="+" ";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(javaCode);
 		if (matcher.find()) {
