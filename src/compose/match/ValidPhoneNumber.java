@@ -19,7 +19,7 @@ public class ValidPhoneNumber {
 	public boolean isValidPhoneNumber(String line) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "919-000-1224\n(919)-000-1224";
 		return Pattern.matches(regex, line);
 	}
 }

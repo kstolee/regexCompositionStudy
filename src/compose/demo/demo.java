@@ -10,8 +10,8 @@ public class demo {
 
 	public static List<String> captureMany(String testString) {
 		
-		String regex = "initially fails";
-		//String regex = "(ab+c)";
+//		String regex = "initially fails";
+		String regex = "(ab+c)";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(testString);
 		while (matcher.find()) {
@@ -25,8 +25,8 @@ public class demo {
 		
 		String first = "";
 		
-		String regex = "initially fails";
-		//String regex = "(ab+c)";
+//		String regex = "initially fails";
+		String regex = "(ab+c)";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(testString);
 		if (matcher.find()) {
@@ -38,15 +38,15 @@ public class demo {
 	
 	public boolean isMatching(String testString) {
 
-		String regex = "initially fails";
-		//String regex = "ab+c";
+		//String regex = "initially fails";
+		String regex = "ab+c";
 		return Pattern.matches(regex, testString);
 	}
 	
 	public boolean isFound(String testString) {
 
-		String regex = "initially fails";
-		//String regex = "ab+c";
+		//String regex = "initially fails";
+		String regex = "ab+c";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(testString);
 		return matcher.find();
