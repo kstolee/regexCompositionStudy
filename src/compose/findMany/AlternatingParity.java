@@ -20,7 +20,7 @@ public class AlternatingParity {
 		List<String> integerPortions = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "((((1|3|5|7|9)(0|2|4|6|8))+|((0|2|4|6|8)(1|3|5|7|9))+)|((1|3|5|7|9)(0|2|4|6|8)(1|3|5|7|9))((0|2|4|6|8)(1|3|5|7|9))+|((0|2|4|6|8))(1|3|5|7|9)(0|2|4|6|8)((1|3|5|7|9)(0|2|4|6|8))+)";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(content);
 		while (matcher.find()) {
