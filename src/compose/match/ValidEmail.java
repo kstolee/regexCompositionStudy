@@ -17,7 +17,7 @@ public class ValidEmail {
 	public boolean isValidEmail(String line) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "([A-Za-z])*@(.*\\.)*";
 		return Pattern.matches(regex, line);
 	}
 }
