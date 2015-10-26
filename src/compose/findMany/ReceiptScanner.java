@@ -29,7 +29,7 @@ public class ReceiptScanner {
 		List<String> storeAndValue = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "/$\n\t\\s\\w";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(scannedReceiptText);
 
