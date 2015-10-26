@@ -16,7 +16,7 @@ public class NoVowelsWord {
 	public boolean hasNoVowelsWord(String content) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "\\b[\\^aeiou]";
 		Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
 		Matcher matcher = pattern.matcher(content);
 		return matcher.find();
