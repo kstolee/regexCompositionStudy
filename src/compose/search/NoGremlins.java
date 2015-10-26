@@ -14,7 +14,7 @@ public class NoGremlins {
 	public boolean noGremlinsFound(String anyText) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "\\[^\f\r\b]";
 		Pattern pattern = Pattern.compile(regex,Pattern.CASE_INSENSITIVE);
 		Matcher matcher = pattern.matcher(anyText);
 		return matcher.find();
