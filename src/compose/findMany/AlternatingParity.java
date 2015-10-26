@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  * should not capture anything because there is no alternation with only one
  * digit. Numbers like "112" and "721433" do not alternate parity consistently,
  * and should be ignored, including subsets like "12" and "72143" that do
- * alternate.
+ * alternate.												this does alternate consistently
  */
 public class AlternatingParity {
 
@@ -20,7 +20,7 @@ public class AlternatingParity {
 		List<String> integerPortions = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "(?<!\\d)((?:[13579][02468](?:[13579][02468])*)|(?:[02468][13579](?:[02468][13579])*)(?!\\d))";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(content);
 		while (matcher.find()) {

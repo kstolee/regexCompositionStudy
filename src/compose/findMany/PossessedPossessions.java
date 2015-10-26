@@ -20,7 +20,7 @@ public class PossessedPossessions {
 		List<String> possessions = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "[a-zA-Z]{2,}'s,? ([a-zA-Z]{2,})";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(anyText);
 		while (matcher.find()) {

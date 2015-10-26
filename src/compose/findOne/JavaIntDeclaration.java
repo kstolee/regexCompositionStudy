@@ -18,7 +18,7 @@ public class JavaIntDeclaration {
 		String constant = "";
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "\\s*int\\s*[a-zA-Z_][a-zA-Z_0-9]*\\s*\\=\\s*(\\d+(?:\\.\\d+)?)\\s*;";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(javaCode);
 		if (matcher.find()) {
