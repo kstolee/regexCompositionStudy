@@ -23,7 +23,7 @@ public class LastDuplicateByte {
 		String byteString = "";
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "(74+)|(AF+)";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(content);
 		if (matcher.find()) {
