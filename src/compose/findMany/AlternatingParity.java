@@ -20,7 +20,7 @@ public class AlternatingParity {
 		List<String> integerPortions = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = content.replaceAll("(?<=[13579])(?=[13579])","-");
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(content);
 		while (matcher.find()) {

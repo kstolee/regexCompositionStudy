@@ -17,7 +17,7 @@ public class TSVParser {
 	public List<String> captureFirstAndThirdFields(String TSVContent) {
 		List<String> fields = new LinkedList<String>();
 
-		String regex = "";
+		String regex = "^([^,]+),";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(TSVContent);
 		while (matcher.find()) {

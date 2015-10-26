@@ -18,7 +18,7 @@ public class JavaIntDeclaration {
 		String constant = "";
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "^[a-zA-Z]+([0-9]+).*";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(javaCode);
 		if (matcher.find()) {
