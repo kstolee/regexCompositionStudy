@@ -25,7 +25,7 @@ public class OnMinuteEvents {
 		List<String> onMinuteEvents = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "00Z *([a-zA-Z .]*)";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(logContent);
 		while (matcher.find()) {
