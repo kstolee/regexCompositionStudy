@@ -25,7 +25,7 @@ public class OnMinuteEvents {
 		List<String> onMinuteEvents = new LinkedList<String>();
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = ".*\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:00Z(.*?).*";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(logContent);
 		while (matcher.find()) {

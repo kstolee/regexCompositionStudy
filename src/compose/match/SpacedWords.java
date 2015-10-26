@@ -17,7 +17,7 @@ public class SpacedWords {
 	public boolean isSpacedWords(String line) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "[[\\s]*[A-Za-z0-9]+[\\s]*]";
 		return Pattern.matches(regex, line);
 	}
 }
