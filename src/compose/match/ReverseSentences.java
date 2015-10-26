@@ -24,7 +24,7 @@ public class ReverseSentences {
 	public boolean isReversedSentences(String line) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "(\\.(\\w+,?\\s+,?)+\\w*[A-Z]\\s*)*(\\.(\\w+ ,?)+\\w*[A-Z])+";
 		return Pattern.matches(regex, line);
 	}
 

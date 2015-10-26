@@ -15,7 +15,7 @@ public class JavaIntDeclaration {
 	 * 
 	 */
 	public String captureIntConstant(String javaCode) {
-		String constant = "";
+		String constant = "\\s*int [a-zA-Z]+\\s+=\\s+(\\d+);";
 
 		// TODO compose a regex to complete the challenge
 		String regex = "";

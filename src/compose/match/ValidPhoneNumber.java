@@ -19,7 +19,7 @@ public class ValidPhoneNumber {
 	public boolean isValidPhoneNumber(String line) {
 
 		// TODO compose a regex to complete the challenge
-		String regex = "";
+		String regex = "[\\d \\(\\)-]+";
 		return Pattern.matches(regex, line);
 	}
 }

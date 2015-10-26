@@ -10,7 +10,7 @@ public class demo {
 
 	public static List<String> captureMany(String testString) {
 		
-		String regex = "initially fails";
+		String regex = "(ab+c)";
 		//String regex = "(ab+c)";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(testString);
@@ -25,7 +25,7 @@ public class demo {
 		
 		String first = "";
 		
-		String regex = "initially fails";
+		String regex = "(ab+c)";
 		//String regex = "(ab+c)";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(testString);
